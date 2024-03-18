@@ -32,8 +32,8 @@ app.post("/bfhl", (req, res) => {
     const oddNumbers = [];
     const upperCaseAlphabets = [];
     for (const element of inputArray) {
-      if (typeof parseInt(element) === "number") {
-        if (parseInt(element) % 2 === 0) {
+      if (typeof element === "number") {
+        if (element % 2 === 0) {
           evenNumbers.push(element);
         } else {
           oddNumbers.push(element);
